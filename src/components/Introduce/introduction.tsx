@@ -10,13 +10,13 @@ interface PropsInterface {
   position: "left" | "right";
 }
 
-const IntroduceItem = ({
+const Introduction = ({
   title,
   content,
   position = "right",
 }: PropsInterface) => {
   return (
-    <StyledIntroduceItem>
+    <StyledIntroduction>
       {position === "right" ? (
         <>
           <TextBox>
@@ -34,13 +34,13 @@ const IntroduceItem = ({
           </TextBox>
         </>
       )}
-    </StyledIntroduceItem>
+    </StyledIntroduction>
   );
 };
 
-export default IntroduceItem;
+export default Introduction;
 
-const StyledIntroduceItem = styled.div`
+const StyledIntroduction = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;

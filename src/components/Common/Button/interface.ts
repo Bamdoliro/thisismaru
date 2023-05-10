@@ -5,3 +5,5 @@ export type ButtonOptionType =
   | "QUATERNARY"
   | "DELETE"
   | "LINK_TEXT";
+
+export type ButtonIconOptionType = "NONE" | "ADD_ICON" | "SHORTCUTS_ICON";

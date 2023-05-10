@@ -52,3 +52,17 @@ export const getButtonStyle = {
     }
   `,
 };
+
+export const getIconButtonStyle = {
+  NONE: css`
+    padding: 10px 16px;
+  `,
+  ADD_ICON: css`
+    gap: 4px;
+    padding: 10px 16px 10px 10px;
+  `,
+  SHORTCUTS_ICON: css`
+    gap: 10px;
+    padding: 10px 20px 10px 22px;
+  `,
+};

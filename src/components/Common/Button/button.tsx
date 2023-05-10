@@ -1,45 +1,50 @@
 "use client";
 
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { ButtonOptionType } from "./interface";
+import { ButtonIconOptionType, ButtonOptionType } from "./interface";
 import { font } from "@/styles/font";
-import { getButtonStyle } from "./index";
+import { getButtonStyle, getIconButtonStyle } from "./index";
 import { styled } from "styled-components";
+import AddIcon from "../Icon/Add";
+import ShortcutsIcon from "../Icon/Shortcuts";
 
 interface PropsInterface extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   option: ButtonOptionType;
+  icon: ButtonIconOptionType;
   width?: string;
-  icon: boolean;
 }
 
 const Button = ({ onClick, children, option, width, icon }: PropsInterface) => {
+  console.log(getIconButtonStyle[icon]);
+
   return (
-    <ButtonStyled
+    <StyledButton
       onClick={onClick}
       option={option}
       icon={icon}
       style={{ width }}
     >
+      {icon === "ADD_ICON" && <AddIcon />}
       {children}
-    </ButtonStyled>
+      {icon === "SHORTCUTS_ICON" && <ShortcutsIcon />}
+    </StyledButton>
   );
 };
 
 export default Button;
 
-const ButtonStyled = styled.button<{
+const StyledButton = styled.button<{
   option: ButtonOptionType;
-  icon: Boolean;
+  icon: ButtonIconOptionType;
 }>`
   ${font.btn2}
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
   border-radius: 6px;
   cursor: pointer;
 
-  padding: ${({ icon }) => (icon ? "10px 16px 10px 10px" : "10px 16px")};
+  ${({ icon }) => icon && getIconButtonStyle[icon]};
   ${({ option }) => option && getButtonStyle[option]}
 `;

@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes, ReactNode } from "react";
-import { ButtonIconOptionType, ButtonOptionType } from "./interface";
+import { ButtonIconType, ButtonOptionType, ButtonSizeType } from "./interface";
 import { font } from "@/styles/font";
-import { getButtonStyle, getIconButtonStyle } from "./index";
+import { getButtonSize, getButtonStyle, getButtonPadding } from "./index";
 import { styled } from "styled-components";
 import AddIcon from "../Icon/Add";
 import ShortcutsIcon from "../Icon/Shortcuts";
@@ -9,18 +9,19 @@ import ShortcutsIcon from "../Icon/Shortcuts";
 interface PropsInterface extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   option: ButtonOptionType;
-  icon: ButtonIconOptionType;
-  width?: string;
+  icon: ButtonIconType;
+  size: ButtonSizeType;
 }
 
-const Button = ({ onClick, children, option, width, icon }: PropsInterface) => {
+const Button = ({
+  onClick,
+  children,
+  option = "PRIMARY",
+  icon = "NONE",
+  size = "MEDIUM",
+}: PropsInterface) => {
   return (
-    <StyledButton
-      onClick={onClick}
-      option={option}
-      icon={icon}
-      style={{ width }}
-    >
+    <StyledButton onClick={onClick} option={option} icon={icon} size={size}>
       {icon === "PLUS_ICON" && <AddIcon />}
       {children}
       {icon === "SHORTCUTS_ICON" && <ShortcutsIcon />}
@@ -32,7 +33,8 @@ export default Button;
 
 const StyledButton = styled.button<{
   option: ButtonOptionType;
-  icon: ButtonIconOptionType;
+  icon: ButtonIconType;
+  size: ButtonSizeType;
 }>`
   ${font.btn2}
   display: flex;
@@ -40,7 +42,9 @@ const StyledButton = styled.button<{
   justify-content: center;
   border-radius: 6px;
   cursor: pointer;
+  height: 54px;
 
-  ${({ icon }) => icon && getIconButtonStyle[icon]};
+  ${({ icon }) => icon && getButtonPadding[icon]};
   ${({ option }) => option && getButtonStyle[option]}
+  ${({ size }) => size && getButtonSize[size]}
 `;

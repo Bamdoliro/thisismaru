@@ -9,22 +9,22 @@ const Header = () => {
       <LogoIcon />
       <HeaderNav>
         <HeaderNavList>
-          <Button option="QUATERNARY" icon="NONE">
+          <Button option="QUATERNARY" icon="NONE" size="MEDIUM">
             원서 접수
           </Button>
-          <Button option="QUATERNARY" icon="NONE">
+          <Button option="QUATERNARY" icon="NONE" size="MEDIUM">
             공지사항
           </Button>
         </HeaderNavList>
         <HeaderNavList>
-          <Button option="QUATERNARY" icon="NONE">
+          <Button option="QUATERNARY" icon="NONE" size="MEDIUM">
             입학 문의하기
           </Button>
           <Line />
-          <Button option="QUATERNARY" icon="NONE">
+          <Button option="QUATERNARY" icon="NONE" size="MEDIUM">
             로그인
           </Button>
-          <Button option="PRIMARY" icon="NONE">
+          <Button option="PRIMARY" icon="NONE" size="MEDIUM">
             입학 접수 시작하기
           </Button>
         </HeaderNavList>

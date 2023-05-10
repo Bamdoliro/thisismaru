@@ -21,7 +21,7 @@ const Main = () => {
             입학지원플랫폼입니다.
           </Desc>
         </TextBox>
-        <Button option="PRIMARY" icon="SHORTCUTS_ICON">
+        <Button option="PRIMARY" icon="SHORTCUTS_ICON" size="LARGE">
           원서 접수 시작하기
         </Button>
       </StyledMain>

@@ -53,7 +53,7 @@ export const getButtonStyle = {
   `,
 };
 
-export const getIconButtonStyle = {
+export const getButtonPadding = {
   NONE: css`
     padding: 10px 16px;
   `,
@@ -63,6 +63,15 @@ export const getIconButtonStyle = {
   `,
   SHORTCUTS_ICON: css`
     gap: 10px;
-    padding: 15.5px 20px 15.5px 22px;
+    padding: 0px 20px 0px 22px;
+  `,
+};
+
+export const getButtonSize = {
+  LARGE: css`
+    height: 54px;
+  `,
+  MEDIUM: css`
+    height: 40px;
   `,
 };

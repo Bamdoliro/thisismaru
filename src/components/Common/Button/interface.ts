@@ -6,4 +6,6 @@ export type ButtonOptionType =
   | "DELETE"
   | "LINK_TEXT";
 
-export type ButtonIconOptionType = "NONE" | "PLUS_ICON" | "SHORTCUTS_ICON";
+export type ButtonIconType = "NONE" | "PLUS_ICON" | "SHORTCUTS_ICON";
+
+export type ButtonSizeType = "LARGE" | "MEDIUM";

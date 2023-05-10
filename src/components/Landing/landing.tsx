@@ -14,10 +14,10 @@ const Landing = () => {
           지원해보세요
         </Title>
         <ButtonBox>
-          <Button option="SECONDARY" icon="NONE">
+          <Button option="SECONDARY" icon="NONE" size="LARGE">
             모집 요강 다운로드
           </Button>
-          <Button option="PRIMARY" icon="SHORTCUTS_ICON">
+          <Button option="PRIMARY" icon="SHORTCUTS_ICON" size="LARGE">
             원서 접수 시작하기
           </Button>
         </ButtonBox>

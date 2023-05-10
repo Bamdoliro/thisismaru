@@ -1,6 +1,5 @@
 import { color } from "@/styles/color";
 import { font } from "@/styles/font";
-import IntroduceImg from "@/assets/introduce-dummy.png";
 import Image from "next/image";
 import styled from "styled-components";
 
@@ -23,11 +22,21 @@ const Introduction = ({
             <Title>{title}</Title>
             <Content>{content}</Content>
           </TextBox>
-          <Image src={IntroduceImg} alt="introduce-img" />
+          <Image
+            src="/assets/introduce-dummy.png"
+            alt="introduce-img"
+            width={508}
+            height={300}
+          />
         </>
       ) : (
         <>
-          <Image src={IntroduceImg} alt="introduce-img" />
+          <Image
+            src="/assets/introduce-dummy.png"
+            alt="introduce-img"
+            width={508}
+            height={300}
+          />
           <TextBox>
             <Title>{title}</Title>
             <Content>{content}</Content>

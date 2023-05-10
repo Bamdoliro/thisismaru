@@ -4,10 +4,10 @@ import { font } from "@/styles/font";
 import Button from "@/components/Common/Button/button";
 import styled from "styled-components";
 
-const Landing = () => {
+const Apply = () => {
   return (
     <AppLayout>
-      <StyledLanding>
+      <StyledApply>
         <Title>
           지금 바로 부산소프트웨어 마이스터고에
           <br />
@@ -21,14 +21,14 @@ const Landing = () => {
             원서 접수 시작하기
           </Button>
         </ButtonBox>
-      </StyledLanding>
+      </StyledApply>
     </AppLayout>
   );
 };
 
-export default Landing;
+export default Apply;
 
-const StyledLanding = styled.div`
+const StyledApply = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;

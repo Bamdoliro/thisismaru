@@ -1,5 +1,3 @@
-"use client";
-
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import { ButtonIconOptionType, ButtonOptionType } from "./interface";
 import { font } from "@/styles/font";
@@ -16,8 +14,6 @@ interface PropsInterface extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = ({ onClick, children, option, width, icon }: PropsInterface) => {
-  console.log(getIconButtonStyle[icon]);
-
   return (
     <StyledButton
       onClick={onClick}

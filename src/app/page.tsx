@@ -1,7 +1,9 @@
-import Header from "@/components/Common/Header/header";
+"use client";
+
+import Main from "@/components/Main/main";
 
 const Home = () => {
-  return <Header />;
+  return <Main />;
 };
 
 export default Home;

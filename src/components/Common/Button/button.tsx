@@ -1,5 +1,3 @@
-"use client";
-
 import { ButtonHTMLAttributes, ReactNode } from "react";
 import { ButtonIconOptionType, ButtonOptionType } from "./interface";
 import { font } from "@/styles/font";

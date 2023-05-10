@@ -1,7 +1,5 @@
-"use client";
-
 import { color } from "@/styles/color";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import Button from "../Button/button";
 import LogoIcon from "../Icon/Logo";
 
@@ -38,6 +36,7 @@ const Header = () => {
 export default Header;
 
 const StyledHeader = styled.div`
+  position: sticky;
   display: flex;
   align-items: center;
   width: 100%;

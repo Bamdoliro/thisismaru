@@ -57,6 +57,7 @@ const Title = styled.p`
 const Desc = styled.p`
   ${font.H3}
   color: ${color.gray500};
+  font-weight: 400;
 
   text-align: center;
 `;

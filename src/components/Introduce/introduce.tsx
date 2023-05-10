@@ -4,7 +4,7 @@ import Introduction from "./introduction";
 
 const Introduce = () => {
   return (
-    <AppLayout height="200vh">
+    <AppLayout height="180vh">
       <StyledIntroduce>
         <IntroduceWrap>
           <Introduction

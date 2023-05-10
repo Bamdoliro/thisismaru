@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 interface PropsInterface {
   children: ReactNode;
-  height: string;
+  height?: string;
 }
 
 const AppLayout = ({ children, height }: PropsInterface) => {

@@ -63,6 +63,6 @@ export const getIconButtonStyle = {
   `,
   SHORTCUTS_ICON: css`
     gap: 10px;
-    padding: 10px 20px 10px 22px;
+    padding: 15.5px 20px 15.5px 22px;
   `,
 };

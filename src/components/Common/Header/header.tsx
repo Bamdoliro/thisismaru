@@ -36,7 +36,7 @@ const Header = () => {
 export default Header;
 
 const StyledHeader = styled.div`
-  position: sticky;
+  position: fixed;
   display: flex;
   align-items: center;
   width: 100%;

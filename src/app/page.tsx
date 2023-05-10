@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/Common/Footer/footer";
 import Header from "@/components/Common/Header/header";
 import Introduce from "@/components/Introduce/introduce";
 import Landing from "@/components/Landing/landing";
@@ -12,6 +13,7 @@ const Home = () => {
       <Main />
       <Introduce />
       <Landing />
+      <Footer />
     </>
   );
 };

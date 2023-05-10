@@ -15,7 +15,7 @@ const fontGenerator = (
 export const font = {
   D1: fontGenerator(700, 4.5, 130, -1.5),
   D2: fontGenerator(700, 3.75, 130, -0.5),
-  D3: fontGenerator(600, 3, 130, 0),
+  D3: fontGenerator(700, 3, 130, 0),
 
   H1: fontGenerator(700, 2.25, 140, 0.25),
   H2: fontGenerator(700, 1.75, 140, 0),

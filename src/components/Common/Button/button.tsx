@@ -21,7 +21,7 @@ const Button = ({ onClick, children, option, width, icon }: PropsInterface) => {
       icon={icon}
       style={{ width }}
     >
-      {icon === "ADD_ICON" && <AddIcon />}
+      {icon === "PLUS_ICON" && <AddIcon />}
       {children}
       {icon === "SHORTCUTS_ICON" && <ShortcutsIcon />}
     </StyledButton>

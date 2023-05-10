@@ -57,7 +57,7 @@ export const getIconButtonStyle = {
   NONE: css`
     padding: 10px 16px;
   `,
-  ADD_ICON: css`
+  PLUS_ICON: css`
     gap: 4px;
     padding: 10px 16px 10px 10px;
   `,

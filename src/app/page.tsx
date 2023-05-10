@@ -1,13 +1,7 @@
-import Button from "@/components/Common/Button/button";
+import Header from "@/components/Common/Header/header";
 
 const Home = () => {
-  return (
-    <div>
-      <Button option="PRIMARY" icon="SHORTCUTS_ICON">
-        더 알아보기
-      </Button>
-    </div>
-  );
+  return <Header />;
 };
 
 export default Home;

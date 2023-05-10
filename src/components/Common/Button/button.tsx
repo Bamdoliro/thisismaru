@@ -16,8 +16,6 @@ interface PropsInterface extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button = ({ onClick, children, option, width, icon }: PropsInterface) => {
-  console.log(getIconButtonStyle[icon]);
-
   return (
     <StyledButton
       onClick={onClick}

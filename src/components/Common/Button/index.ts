@@ -30,6 +30,7 @@ export const getButtonStyle = {
     border: none;
     &:hover {
       color: ${color.gray900};
+      background-color: ${color.gray200};
     }
   `,
   DELETE: css`

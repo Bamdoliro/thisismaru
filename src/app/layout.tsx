@@ -12,7 +12,7 @@ export const metadata = {
 
 const RootLayout = ({ children }: PropsInterface) => {
   return (
-    <html lang="en">
+    <html lang="kr">
       <body>{children}</body>
     </html>
   );

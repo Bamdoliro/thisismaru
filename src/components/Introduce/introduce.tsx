@@ -1,6 +1,6 @@
 import AppLayout from "@/layouts/AppLayout";
 import styled from "styled-components";
-import Introduction from "./introduction";
+import Introduction from "./Introduction/introduction";
 
 const Introduce = () => {
   return (

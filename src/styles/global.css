@@ -6,10 +6,11 @@
 
 input[type=checkbox], input[type=radio] {
   accent-color: #1470FF;
+  cursor: pointer;
 }
 
 p {
-  font-family: "Pretendard Variable";
+  display: inline-block;
 }
 
 a {

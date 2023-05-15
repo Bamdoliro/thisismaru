@@ -1,4 +1,5 @@
 import { color } from "@/styles/color";
+import { font } from "@/styles/font";
 import { css } from "styled-components";
 
 export const getButtonStyle = {
@@ -58,7 +59,7 @@ export const getButtonPadding = {
   NONE: css`
     padding: 10px 16px;
   `,
-  PLUS_ICON: css`
+  ADD_ICON: css`
     gap: 4px;
     padding: 10px 16px 10px 10px;
   `,
@@ -70,9 +71,15 @@ export const getButtonPadding = {
 
 export const getButtonSize = {
   LARGE: css`
+    ${font.btn1}
     height: 54px;
   `,
   MEDIUM: css`
+    ${font.btn1}
+    height: 48px;
+  `,
+  SMALL: css`
+    ${font.btn2}
     height: 40px;
   `,
 };

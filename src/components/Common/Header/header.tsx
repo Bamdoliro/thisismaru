@@ -44,7 +44,8 @@ const StyledHeader = styled.div`
   background-color: ${color.white};
   border-bottom: 1px solid ${color.gray200};
   padding: 0px 30px;
-  overflow: hidden;
+  overflow-x: hidden; 
+  overflow-y: hidden;
 `;
 
 const HeaderNav = styled.div`

@@ -52,7 +52,8 @@ const Title = styled.p`
   color: ${color.gray900};
 
   text-align: center;
-  overflow: hidden
+  overflow-x: hidden; 
+  overflow-y: hidden;
 `;
 
 const Desc = styled.p`

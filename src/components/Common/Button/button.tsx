@@ -49,7 +49,8 @@ const StyledButton = styled.button<{
   justify-content: center;
   border-radius: 6px;
   cursor: pointer;
-  overflow: hidden;
+  overflow-x: hidden; 
+  overflow-y: hidden;
 
   ${({ icon }) => icon && getButtonPadding[icon]};
   ${({ option }) => option && getButtonStyle[option]}

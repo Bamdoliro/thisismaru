@@ -4,10 +4,6 @@
   padding: 0;
 }
 
-* body::-webkit-scrollbar {
-  display: none;
-}
-
 input[type=checkbox], input[type=radio] {
   accent-color: #1470FF;
   cursor: pointer;

@@ -1,13 +1,12 @@
-import Header from "@/components/Common/Header/header";
-import AppLayout from "@/layouts/AppLayout";
+import BaseLayout from "@/layouts/BaseLayout";
 import { color } from "@/styles/color";
 import { font } from "@/styles/font";
 import styled from "styled-components";
-import Button from "../Common/Button/button";
+import Button from "../common/Button/button";
 
 const Main = () => {
   return (
-    <AppLayout>
+    <BaseLayout>
       <StyledMain>
         <TextBox>
           <Title>
@@ -25,7 +24,7 @@ const Main = () => {
           원서 접수 시작하기
         </Button>
       </StyledMain>
-    </AppLayout>
+    </BaseLayout>
   );
 };
 

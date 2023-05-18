@@ -1,12 +1,12 @@
-import AppLayout from "@/layouts/AppLayout";
+import BaseLayout from "@/layouts/BaseLayout";
 import { color } from "@/styles/color";
 import { font } from "@/styles/font";
-import Button from "@/components/Common/Button/button";
+import Button from "@/components/common/Button/button";
 import styled from "styled-components";
 
 const Apply = () => {
   return (
-    <AppLayout>
+    <BaseLayout>
       <StyledApply>
         <Title>
           지금 바로 부산소프트웨어 마이스터고에
@@ -22,7 +22,7 @@ const Apply = () => {
           </Button>
         </ButtonBox>
       </StyledApply>
-    </AppLayout>
+    </BaseLayout>
   );
 };
 

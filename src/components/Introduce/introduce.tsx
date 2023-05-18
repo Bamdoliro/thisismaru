@@ -1,10 +1,10 @@
-import AppLayout from "@/layouts/AppLayout";
+import BaseLayout from "@/layouts/BaseLayout";
 import styled from "styled-components";
 import Introduction from "./Introduction/introduction";
 
 const Introduce = () => {
   return (
-    <AppLayout height="180vh">
+    <BaseLayout height="180vh">
       <StyledIntroduce>
         <IntroduceWrap>
           <Introduction
@@ -24,7 +24,7 @@ const Introduce = () => {
           />
         </IntroduceWrap>
       </StyledIntroduce>
-    </AppLayout>
+    </BaseLayout>
   );
 };
 

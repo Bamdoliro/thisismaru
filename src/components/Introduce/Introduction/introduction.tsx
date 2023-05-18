@@ -3,17 +3,13 @@ import { font } from "@/styles/font";
 import Image from "next/image";
 import styled from "styled-components";
 
-interface PropsInterface {
+interface PropsType {
   title: string;
   content: string;
   position: "left" | "right";
 }
 
-const Introduction = ({
-  title,
-  content,
-  position = "right",
-}: PropsInterface) => {
+const Introduction = ({ title, content, position = "right" }: PropsType) => {
   return (
     <StyledIntroduction>
       {position === "right" ? (

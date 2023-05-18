@@ -2,18 +2,18 @@ import { color } from "@/styles/color";
 import { ReactNode } from "react";
 import styled from "styled-components";
 
-interface PropsInterface {
+interface PropsType {
   children: ReactNode;
   height?: string;
 }
 
-const AppLayout = ({ children, height }: PropsInterface) => {
-  return <StyledAppLayout style={{ height }}>{children}</StyledAppLayout>;
+const BaseLayout = ({ children, height }: PropsType) => {
+  return <StyledBaseLayout style={{ height }}>{children}</StyledBaseLayout>;
 };
 
-export default AppLayout;
+export default BaseLayout;
 
-const StyledAppLayout = styled.div`
+const StyledBaseLayout = styled.div`
   width: 100vw;
   height: 100vh;
   background-color: ${color.white};
